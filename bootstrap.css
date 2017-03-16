@@ -1,0 +1,115 @@
+/*.main {
+background: black;
+width: 800px;
+height: 600px;
+margin: 50px auto;
+
+}
+*/
+.panel{
+background: lightgray;
+height: 30px;
+padding: 10px;
+}
+
+.panel a#text_pop {
+border: 2px solid black;
+background: lightgray;
+color: black;
+display: block;
+float: right;
+margin-right: 10px;
+padding: 5px 10px;
+text-decoration: none;
+
+}
+
+a#text_pop:hover{
+border-color: red;
+background: white;
+color: blue;
+}
+
+.overlay {
+background-color: rgba(0, 0, 0, 0.6);
+bottom: 0;
+cursor: default;
+left: 0;
+opacity: 0;
+position: fixed;
+right: 0;
+top: 0;
+visibility: hidden;
+z-index: 1;
+}
+
+.overlay:target {
+visibility: visible;
+opacity: 1;
+}
+
+.popup {
+background-color: white;
+border: 3px solid black;
+display: inline-block;
+left: 40%;
+opacity: 0;
+padding: 15px;
+position: fixed;
+text-align: justify;
+top: 40%;
+visibility: hidden;
+z-index: 10;
+
+}
+
+.overlay:target+.popup {
+top: 20%;
+opacity: 1;
+visibility: visible;
+}
+
+.close {
+background-color: black;
+height: 25px;
+width: 25px;
+line-height: 25px;
+position: absolute;
+right: 0;
+text-align: center;
+text-decoration: none;
+top: 0px;
+
+}
+
+.close:before {
+color: white;
+content: "X";
+font-size: 18px;
+text-shadow: none;
+}
+
+.close:hover {
+background-color: gray;
+}
+
+.popup p, .popup div {
+margin-bottom: 10px;
+}
+
+.popup label {
+display: inline-block;
+text-align: left;
+width: 120px;
+}
+
+.popup input[type="text"], .popup input[type="password"] {
+border: 1px solid;
+border-color: black;
+margin: 0;
+padding: 2px;
+}
+
+.popup input[type="text"]:hover, .popup input[type="password"]:hover {
+border-color: red;
+}
