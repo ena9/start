@@ -1,12 +1,3 @@
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
 
 .panel{
 background: lightgray;
@@ -14,23 +5,6 @@ height: 65px;
 padding: 15px;
 margin: 5px;
 margin-bottom: 15px;
-}
-
-.panel a#text_pop {
-border: 2px solid black;
-background: lightgray;
-color: black;
-display: block;
-float: left;
-padding: 5px 15px;
-text-decoration: none;
-
-}
-
-a#text_pop:hover{
-border-color: red;
-background: white;
-color: blue;
 }
 
 .overlay {
@@ -55,12 +29,12 @@ opacity: 1;
 background-color: white;
 border: 3px solid black;
 display: inline-block;
-left: 40%;
+left: 20%;
 opacity: 0;
 padding: 15px;
 position: fixed;
 text-align: justify;
-top: 40%;
+top: 20%;
 visibility: hidden;
 z-index: 10;
 
@@ -104,13 +78,6 @@ margin-bottom: 10px;
 display: inline-block;
 text-align: left;
 width: 120px;
-}
-
-.popup input[type="text"], .popup input[type="password"] {
-border: 1px solid;
-border-color: black;
-margin: 0;
-padding: 2px;
 }
 
 .popup input[type="text"]:hover, .popup input[type="password"]:hover {
