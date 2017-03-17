@@ -1,15 +1,19 @@
-/*.main {
-background: black;
-width: 800px;
-height: 600px;
-margin: 50px auto;
-
+html {
+  position: relative;
+  min-height: 100%;
 }
-*/
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
 .panel{
 background: lightgray;
-height: 30px;
-padding: 10px;
+height: 65px;
+padding: 15px;
+margin: 5px;
+margin-bottom: 15px;
 }
 
 .panel a#text_pop {
@@ -17,9 +21,8 @@ border: 2px solid black;
 background: lightgray;
 color: black;
 display: block;
-float: right;
-margin-right: 10px;
-padding: 5px 10px;
+float: left;
+padding: 5px 15px;
 text-decoration: none;
 
 }
@@ -112,4 +115,23 @@ padding: 2px;
 
 .popup input[type="text"]:hover, .popup input[type="password"]:hover {
 border-color: red;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+  float: left;
+}
+
+.container .text-muted {
+  margin: 10px 0;
 }
