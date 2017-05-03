@@ -1,72 +1,71 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<link href="bootstrap.css" rel="stylesheet">
-		<link href="page_style.css" rel="stylesheet">
-		<script type="text/javascript" src="jquery-3.2.0.js"></script>
-		<title></title>
-	</head>
-	<body>
-		<header>
-			<h1>Header</h1> 
-		</header>
-		<p>text</p>
-		<div class="main">
-			<div class="panel ">
-				<a href="#calc_form" id="text_pop"> 
-					<button type="button" class="btn btn-primary" value="calc_form" >Calculator</button>
-				</a>
-			</div>
-		</div>
-		<a href="#x" class="open_calc" id="calc_form"></a>
-		<div class="popup">
-			<p> Calculator</p>
-			<div class="calculator">
-				<form class="calc_form">
-					<div class="calc_row">
-						<input class="calc_display" id="display" type="text"  value="" placeholder="input" 
-						pattern="[0-9 + - * / ]{1,60}" required title="Разрешены только 60 цифр"/>
-					</div>
-					<div class="calc_row">
-						<input type="button" value="AC" class="btn calc_key clear_button" id="clear_button" />
-						<input type="button" value="<--" class="btn calc_key backspace_button" id="backspace_button"/>
-						<input type="button" value="/" class="btn calc_key func_button calc_button"/>
-						<!-- <input type="button" value="x2" class="btn calc_key calc_power"/> -->
-					</div>
-					<div class="calc_row">
-						<input type="button" value="7" class="btn calc_key calc_button"/>
-						<input type="button" value="8" class="btn calc_key calc_button"/>
-						<input type="button" value="9" class="btn calc_key calc_button"/>
-						<input type="button" value="*" class="btn calc_key func_button calc_button"/>
-					</div>
-					<div class="calc_row">
-						<input type="button" value="4" class="btn calc_key calc_button"/>
-						<input type="button" value="5" class="btn calc_key calc_button"/>
-						<input type="button" value="6" class="btn calc_key calc_button"/>
-						<input type="button" value="-" class="btn calc_key func_button calc_button"/>
-					</div>
-					<div class="calc_row">
-						<input type="button" value="1" class="btn calc_key calc_button"/>
-						<input type="button" value="2" class="btn calc_key calc_button"/>
-						<input type="button" value="3" class="btn calc_key calc_button"/>
-						<input type="button" value="+" class="btn calc_key func_button calc_button"/>
-					</div>
-					<div class="calc_row">
-						<input type="button" value="0" class="btn calc_key calc_input zero_button calc_button"/>
-						<input type="button" value="." class="btn calc_key calc_button"/>
-						<input type="button" value="=" class="btn calc_key  func_button result" />
-					</div>
-					<script src="script.js"></script>
-				</form>
-			</div>
-			<a class="close" href="#close"></a>
-		</div>
-		<p>text</p>
-		<footer class="footer">
-			<div class="footer_text">
-				<p class="text-muted">Copyright 2017.</p>
-			</div>
-		<footer>
-	</body>
+    <meta charset="utf-8">
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="page_style.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery-3.2.0.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <p>text</p>
+    <div class="main">
+        <div class="panel ">
+            <a href="#calc_form" id="text_pop">
+                <button type="button" class="btn btn-primary" value="calc_form">Calculator</button>
+            </a>
+        </div>
+    </div>
+    <a href="#x" class="open_calc" id="calc_form"></a>
+    <div class="popup">
+        <!--<p> Calculator</p>-->
+        <div class="calculator">
+            <form class="calc_form">
+                <div class="calc_row">
+                    <input class="calc_display" id="display" type="text" value="" placeholder="0" maxlength="10" pattern="[0-9]{1,14}" required title="Разрешены только 14 цифр" autofocus />
+                </div>
+                <div class="calc_row">
+                    <input type="button" value="AC" class="btn calc_key clear_button" id="clear_button" />
+                    <input type="button" value="<--" class="btn calc_key backspace_button" id="backspace_button" />
+                    <input type="button" value="/" class="btn calc_key func_button " />
+                </div>
+                <div class="calc_row">
+                    <input type="button" value="7" class="btn calc_key calc_button" />
+                    <input type="button" value="8" class="btn calc_key calc_button" />
+                    <input type="button" value="9" class="btn calc_key calc_button" />
+                    <input type="button" value="*" class="btn calc_key func_button " />
+                </div>
+                <div class="calc_row">
+                    <input type="button" value="4" class="btn calc_key calc_button" />
+                    <input type="button" value="5" class="btn calc_key calc_button" />
+                    <input type="button" value="6" class="btn calc_key calc_button" />
+                    <input type="button" value="-" class="btn calc_key func_button " />
+                </div>
+                <div class="calc_row">
+                    <input type="button" value="1" class="btn calc_key calc_button" />
+                    <input type="button" value="2" class="btn calc_key calc_button" />
+                    <input type="button" value="3" class="btn calc_key calc_button" />
+                    <input type="button" value="+" class="btn calc_key func_button " />
+                </div>
+                <div class="calc_row">
+                    <input type="button" value="0" class="btn calc_key calc_input zero_button calc_button" />
+                    <input type="button" value="." class="btn calc_key calc_button decimal" />
+                    <input type="button" value="=" class="btn calc_key  func_button result" />
+                </div>
+                <script src="script.js"></script>
+            </form>
+        </div>
+        <!--<a class="close" href="#close"></a>-->
+    </div>
+    <p>text</p>
+    <footer class="footer">
+        <div class="footer_text">
+            <p class="text-muted">Copyright 2017.</p>
+        </div>
+        <footer>
+</body>
 </html>
